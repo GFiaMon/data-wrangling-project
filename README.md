@@ -3,7 +3,20 @@
 ![Project Banner](visuals/1_berlin_rent_inflation_trend_2005-2023.png)  
 
 ## 🔍 Project Overview  
-This project statistically analyzes the relationship between Berlin's official rent index (Mietspiegel) and Germany's inflation rate from 2005-2023. The Mietspiegel surveys and reports **Kaltmiete** (base rent excluding utilities), serving as a legal benchmark for fair rents in Berlin.  
+This project statistically analyzes the relationship between Berlin's official rent index (Mietspiegel) and Germany's inflation rate from 2005-2023. The Mietspiegel surveys and reports **Kaltmiete** (base rent excluding utilities), serving as a legal benchmark for fair rents in Berlin.
+
+*Hypothesis Test: Does rent change mirror inflation?*
+
+## Hypothesis
+- **H₀**: Biennial rent index change = Inflation rate (μ_rent = μ_inflation)
+
+    *The biennial % change in Berlin's rent index = Germany's inflation rate*  
+  (Mathematically: μ_rent = μ_inflation)
+
+- **H₁**: Biennial rent index change ≠ Inflation rate (μ_rent ≠ μ_inflation)
+
+    *The biennial % change in Berlin's rent index ≠ Germany's inflation rate*  
+  (Mathematically: μ_rent ≠ μ_inflation)
 
 **Core Question**:  
 *"Do biennial changes in Berlin's base rent systematically differ from inflation changes?"*  
@@ -41,7 +54,7 @@ This project statistically analyzes the relationship between Berlin's official r
   - Required periods for 80% power: 59  
 
 ### 4. Rent-Inflation Change Over Time  
-![Change Timeline](visuals/5_berlin_rent_v_inflation_change_overtime.png)  
+![Change Timeline](visuals/5_plot_4_berlin_rent_v_inflation_with_events.png)  
 - **Pattern Identification**:  
   - Pre-2019: Higher rent volatility  
   - Post-2019: Stabilization despite economic shocks  
