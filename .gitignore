@@ -1,0 +1,24 @@
+# Mac files
+.DS_Store
+
+# Drafts/ & PDFs/
+drafts/
+pdfs/
+docs/
+src/
+
+# Python/IDE
+__pycache__/
+# .idea/
+
+# Jupyter
+# .ipynb_checkpoints/
+
+# Data files (if large)
+# *.csv
+# *.xlsx
+# *.json
+
+# Environment files
+.env
+venv/
