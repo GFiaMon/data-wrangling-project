@@ -51,7 +51,32 @@ This project statistically analyzes the relationship between Berlin's official r
 ![Power Analysis 2](visuals/4b_berlin_rent_inflation_power_analysis_2005-2023_2datasets.png)  
 - **Critical Finding**:  
   - Current power (9 periods): 16.6%  
-  - Required periods for 80% power: 59  
+  - Required periods for 80% power: 59
+
+**What Statistical Power Means**:  
+> Statistical power measures our ability to detect a real difference when it exists. With only 9 data points:  
+> - Our current power is **16.6%** - meaning we'd miss a real difference 83.4% of the time. Surprisingly, when we added more data (from 3 to 9 periods):
+
+  > - **Power increased** from 11.2% → 16.6% (slightly better detection) - 118 years of data for 80% power
+  > - **But required periods jumped** from 19 → 59 for reliable detection  
+
+> *Why?* The new data revealed higher variability in rent-inflation differences, making patterns harder to spot despite more data points."  
+> - This low power explains why we can't detect significance despite visible differences  
+
+#### Cohen's d Effect Size  
+> **Cohen's d = 0.37** quantifies the practical importance of differences:  
+> - Measures how many standard deviations separate rent and inflation changes  
+> - d=0.37 is a **small-to-medium effect**
+> - **In practical terms**: When inflation changes by 5%, rent typically changes by either 3.2% or 6.8% (about ±1.8% difference)  
+> - Interpretation: The average difference is noticeable but not dramatic  
+
+| d Value | Effect Size | Housing Market Interpretation |  
+|---------|-------------|-------------------------------|  
+| <0.2    | Negligible  | Trivial difference |  
+| 0.2-0.5 | Small       | Noticeable but minor |  
+| 0.5-0.8 | Medium      | Substantial policy impact |  
+| >0.8    | Large       | Market-altering difference |  
+  
 
 ### 4. Rent-Inflation Change Over Time  
 ![Change Timeline](visuals/5_plot_4_berlin_rent_v_inflation_with_events.png)  
@@ -68,7 +93,7 @@ This project statistically analyzes the relationship between Berlin's official r
 | **Key Conclusion**   |             | No systematic difference |  
 
 **Interpretation**:  
-> "While we observe meaningful differences in specific periods (especially bevore 2019), statistical tests show no consistent evidence that rent changes systematically differ from inflation over the 2005-2023 period."  
+> While we observe meaningful differences in specific periods (especially before 2019), statistical tests show no consistent evidence that rent changes systematically differ from inflation over the 2005-2023 period.  
 
 ## 🛠️ How to Reproduce  
 ### Step 1: Clone Repository  
